@@ -13,7 +13,7 @@ buildscript {
 	}
 
 	dependencies {
-		classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+		classpath 'com.anatawa12.forge:ForgeGradle:2.3-1.0.+'
 		classpath 'org.spongepowered:mixingradle:0.6-SNAPSHOT'
 	}
 }
@@ -72,8 +72,8 @@ litemod {
 		// Uncomment any of the following lines and fill in your own details as required
 		//requiredAPIs = [ 'someapi' ]
 		//tweakClass = 'name.of.tweaker.here'
-		dependsOn = [ 'malilib' ]
-		mixinConfigs = [ "mixins.${project.mod_id}.json" ]
+		dependsOn = [ "malilib".toString() ]
+		mixinConfigs = [ "mixins.${project.mod_id}.json".toString() ]
 	}
 }
 
