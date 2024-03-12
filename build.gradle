@@ -44,7 +44,8 @@ minecraft {
 }
 
 dependencies {
-	deobfCompile "malilib:malilib-liteloader-${project.minecraft_version_out}:${project.malilib_version}:deobf"
+	compile files('libs/malilib-liteloader-1.12.2-0.55.0-deobf.jar')
+	// deobfCompile "malilib:malilib-liteloader-${project.minecraft_version_out}:${project.malilib_version}:deobf"
 }
 
 sourceSets {
